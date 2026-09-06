@@ -24,10 +24,10 @@ jobs:
 
       - name: Compile Sketch
         run: |
-          arduino-cli compile --fqbn esp32:esp32:esp32s3 --export-binaries main.ino
+          arduino-cli compile --fqbn esp32:esp32:esp32s3 --export-binaries ten_thu_muc_cua_ban/main.ino
 
       - name: Upload Binary Artifact
         uses: actions/upload-artifact@v4
         with:
           name: firmware-bin
-          path: build/esp32.esp32.esp32s3/*.bin
+          path: ten_thu_muc_cua_ban/build/esp32.esp32.esp32s3/*.bin

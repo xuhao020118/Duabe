@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: firmware-bin
-          path: ten_thu_muc_cua_ban/build/esp32.esp32.esp32s3/*.bin
+          path: main/build/esp32.esp32.esp32s3/*.bin
